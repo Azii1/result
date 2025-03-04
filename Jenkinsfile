@@ -1,10 +1,10 @@
-pipeline {
+ipeline {
     agent any
 
     environment {
         AWS_ACCOUNT_ID = '205930645143'
         AWS_REGION = 'eu-north-1' 
-        ECR_REPO_NAME = 'result'
+        ECR_REPO_NAME = 'worker'
         DOCKER_IMAGE_TAG = 'latest'
     }
 
@@ -29,7 +29,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 script {
-                    echo "Running tests for vote..."
+                    echo "Running tests for result..."
                     // Add real test commands if applicable
                     sh 'echo "Tests completed successfully!"'
                 }
