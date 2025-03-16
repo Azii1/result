@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: result
-        image: my-node-app:latest
+        image: azii1/result:latest
         ports:
         - containerPort: 80
